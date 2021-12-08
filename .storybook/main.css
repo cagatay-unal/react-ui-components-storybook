@@ -1,0 +1,87 @@
+html body{
+    color: #1F2937;
+}
+html body .section-title{
+    margin-bottom: 24px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+html body .section-title > *{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+html body .section-title .badge{
+    font-size: 18px;
+    font-weight: inherit;
+    line-height: initial;
+}
+
+html body .section-title > h1,
+html body .section-title > h2,
+html body .section-title > h3,
+html body .section-title > h4,
+html body .section-title > h5,
+html body .section-title > h6{
+    color: #4B5563;
+    font-size: 32px;
+    font-weight: 700;
+    /* letter-spacing: 6px; */
+    line-height: 24px;
+    text-transform: uppercase;
+}
+html body .section-title > .subtitle{}
+html body .section-title > .description{
+    font-size: 16px;
+    color: currentColor;
+    line-height: 24px;
+}
+html body .section-title > .description .badge{
+    font-size: inherit;
+    font-weight: initial;
+}
+
+html body .badge{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 8px;
+    margin: 0 8px;
+    border-radius: 50px;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 700;
+}
+html body .badge.badge-default{
+    background: #F3F4F6;
+    color: #4B5563;
+}
+html body .badge.badge-success{
+    background: #D1FAE5;
+    color: #059669;
+}
+html body .badge.badge-info{
+    background: #DBEAFE;
+    color: #2563EB;
+}
+html body .badge.badge-alert{
+    background: #FEF3C7;
+    color: #D97706;
+}
+html body .badge.badge-warning{
+    background: #FEE2E2;
+    color: #DC2626;
+}
+
+html body .sbdocs.sbdocs-wrapper{justify-content: flex-start;}
+html body .sbdocs.sbdocs-wrapper .sbdocs.sbdocs-content{max-width: 100%;}
+html body .sbdocs.sbdocs-preview{
+    border: none;
+    box-shadow: none;
+}
+
+html body .sbdocs.sbdocs-preview > .docs-story > div{
+    padding-left: 0;
+}
