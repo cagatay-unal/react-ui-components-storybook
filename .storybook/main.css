@@ -1,7 +1,21 @@
+:root{
+
+    /* Base Color Palette */
+    --default: #E6E8EC;
+    --success: #059669;
+    --info: #2563EB;
+    --alert: #F59E0B;
+    --warning: #DC2626;
+
+    /* Typographical Variables */
+    --defaultTextColor: #1F2937;
+}
+
 html body{
-    color: #1F2937;
+    color: var(--defaultTextColor);
 }
 html body .section-title{
+    width: 100%;
     margin-bottom: 24px;
     display: inline-flex;
     flex-direction: column;

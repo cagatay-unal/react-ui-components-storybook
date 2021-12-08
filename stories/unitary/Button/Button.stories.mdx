@@ -1,0 +1,63 @@
+import { Canvas, Meta, Story, ArgsTable} from '@storybook/addon-docs';
+import { Button } from './Button';
+
+<Meta title="Components/UI Elements/Button" component={Button} />
+
+export const Template = (args) => <Button {...args} />;
+
+<div class="section-title">
+    <h4>button element</h4>
+    <p class="description">The development process of this <span className="badge badge-success">UI Element / Button</span> component is ongoing.</p>
+</div>
+
+<div class="section-title">
+    <h4>Button Variation for all status </h4>
+    <p class="description">You can select each one variation for all state</p>
+</div>
+
+<Canvas>
+    <Story name="Primary Default Button" args={{ status: 'default', text: 'Default', router: false, outline: false}}>
+        {Template.bind({})}
+    </Story>
+    <Story name="Success Button" args={{ status: 'success', text: 'Success', router: false, outline: false}}>
+        {Template.bind({})}
+    </Story>
+    <Story name="Info Button" args={{ status: 'info', text: 'Info', router: false, outline: false}}>
+        {Template.bind({})}
+    </Story>
+    <Story name="Alert Button" args={{ status: 'alert', text: 'Alert', router: false, outline: false}}>
+        {Template.bind({})}
+    </Story>
+    <Story name="Warning Button" args={{ status: 'warning', text: 'Warning', router: false, outline: false}}>
+        {Template.bind({})}
+    </Story>
+    <Story name="Outline Default Button" args={{ status: 'default', text: 'Outline Default', router: false, outline: true}}>
+        {Template.bind({})}
+    </Story>
+    <Story name="Outline Success Button" args={{ status: 'success', text: 'Outline Success', router: false, outline: true}}>
+        {Template.bind({})}
+    </Story>
+    <Story name="Outline Info Button" args={{ status: 'info', text: 'Outline Info', router: false, outline: true}}>
+        {Template.bind({})}
+    </Story>
+    <Story name="Outline Alert Button" args={{ status: 'alert', text: 'Outline Alert', router: false, outline: true}}>
+        {Template.bind({})}
+    </Story>
+    <Story name="Outline Warning Button" args={{ status: 'warning', text: 'Outline Warning', router: false, outline: true}}>
+        {Template.bind({})}
+    </Story>
+</Canvas>
+
+<div class="section-title">
+    <h4>Preview</h4>
+</div>
+
+<Canvas>
+    <Story name="Default Button" args={{ status: 'default', text: 'Button', router: false, outline: false}}>
+        {Template.bind({})}
+    </Story>
+</Canvas>
+
+<Canvas>
+    <ArgsTable story="Default Button" />
+</Canvas>
