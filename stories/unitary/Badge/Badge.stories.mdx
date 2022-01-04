@@ -1,0 +1,48 @@
+import { Canvas, Meta, Story, ArgsTable} from '@storybook/addon-docs';
+import { Badge } from './Badge';
+
+<Meta title="Components/UI Elements/Badge" component={Badge} argTypes={{
+    className:{
+        control: {
+            type: "select",
+            options: ['default', 'success', 'info', 'alert', 'warning', 'default_outline', 'success_outline', 'info_outline', 'alert_outline', 'warning_outline',]
+        }
+    }
+}} />
+
+export const Template = (args) => <Badge {...args} />;
+
+<div class="section-title">
+    <h4>badge element</h4>
+    <p class="description">The development process of this <span className="badge badge-success">UI Element / Badge</span> component is ongoing.</p>
+</div>
+
+```html
+<span className="badge badge__default">badge text</span>
+<span className="badge badge__success_outline">badge text</span>
+```
+
+<Canvas>
+    <Story name="Default Badge" args={{ text: 'Default', className: 'default' }}>{Template.bind({})}</Story>
+    <Story name="Success Badge" args={{ text: 'Success', className: 'success' }}>{Template.bind({})}</Story>
+    <Story name="Info Badge" args={{ text: 'Info', className: 'info' }}>{Template.bind({})}</Story>
+    <Story name="Alert Badge" args={{ text: 'Alert', className: 'alert' }}>{Template.bind({})}</Story>
+    <Story name="Warning Badge" args={{ text: 'Warning', className: 'warning' }}>{Template.bind({})}</Story>
+    <Story name="Default Outline Badge" args={{ text: 'Default Outline', className: 'default_outline' }}>{Template.bind({})}</Story>
+    <Story name="Success Outline Badge" args={{ text: 'Success Outline', className: 'success_outline' }}>{Template.bind({})}</Story>
+    <Story name="Info Outline Badge" args={{ text: 'Info Outline', className: 'info_outline' }}>{Template.bind({})}</Story>
+    <Story name="Alert Outline Badge" args={{ text: 'Alert Outline', className: 'alert_outline' }}>{Template.bind({})}</Story>
+    <Story name="Warning Outline Badge" args={{ text: 'Warning Outline', className: 'warning_outline' }}>{Template.bind({})}</Story>
+</Canvas>
+
+<div class="section-title">
+    <h4>Preview</h4>
+</div>
+
+<Canvas>
+    <Story name="Preview Badge" args={{ text: 'Default', className: 'default' }}>{Template.bind({})}</Story>
+</Canvas>
+
+<Canvas>
+    <ArgsTable story="Preview Badge" />
+</Canvas>
